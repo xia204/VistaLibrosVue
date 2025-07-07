@@ -1,13 +1,14 @@
 <script setup>
 import { ref, shallowRef } from 'vue'
 import VistaConsulta from '@/views/VistaConsulta.vue'
-import LibroPost from '@/components/LibroPost.vue'
+//import LibroPost from '@/components/LibroPost.vue'
+import AutorPost from '@/components/AutorPost.vue'
 
 const drawer = ref(true)
 
 const links = [
   ['mdi-database', 'Consulta', VistaConsulta],
-  ['mdi-send', 'Crear', LibroPost]
+  ['mdi-send', 'Crear', AutorPost]
 ]
 
 const componenteActual = shallowRef(VistaConsulta)
